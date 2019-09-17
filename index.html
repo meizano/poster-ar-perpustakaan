@@ -1,164 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
-    <title>Poster AR: 06 - Multiple Marker</title>
-    <script src="./library/aframe.min.js"></script>
-    <script src="./library/aframe-ar.min.js"></script>
+    <title>Poster AR: 03</title>
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"> </script>
+    <script src="https://meizano.github.io/AR/aframe/library/aframe-ar.min.js"> </script>
 </head>
-
 <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded vr-mode-ui="enabled: false" arjs>
+    <a-scene embedded vr-mode-ui="disabled" arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled:false;">
         <a-assets>
-            <img id="my-image" src="./assets/orientasi-perpustakaan.jpg">
+            <img id="bvs" src="http://q-ec.bstatic.com/images/hotel/max1024x768/831/83174127.jpg">
         </a-assets>
-
-        <a-marker type='barcode' value='1'>
-            <a-entity position='0 0 0' rotation="-90 0 0">
-                <a-plane width="4" height="8" position='-2 -4 -0.1' rotation="0 0 0" color="orange"
-                    material='opacity: 0.5;'>
-                    <a-text value="JUDUL DISINI" color="#111" position="0 3.5 0" align="center"></a-text>
-                    <a-image src="#my-image" width="4" height="3" position="0 1.5 0"></a-image>
-                    <a-text position="-1.9 -1.5 0" width="3.8" height="4.5"
-                        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in posuere nulla. Pellentesque et nisl erat. Aenean pharetra sapien accumsan ipsum efficitur, sed viverra nibh bibendum. Praesent odio sapien, iaculis eu ligula in, aliquam egestas metus. Proin imperdiet, neque quis dictum elementum, libero mauris suscipit ex, sed rutrum tortor massa eu nunc. Nulla eget molestie risus, a blandit massa. Nam egestas risus sapien, eu tristique erat mollis at. Duis consectetur dolor eros, sit amet faucibus nunc vehicula ac. Etiam id sagittis ipsum. Donec ut dolor et metus ultrices vehicula."
-                        color="black"></a-text>
-                </a-plane>
-            </a-entity>
-        </a-marker>
-        
-        <a-marker type='barcode' value='1'>
-            <a-entity position='0 0 0' rotation="-90 0 0">
-                <a-plane width="4" height="8" position='-2 -4 -0.1' rotation="0 0 0" color="orange"
-                    material='opacity: 0.5;'>
-                    <a-text value="JUDUL DISINI" color="#111" position="0 3.5 0" align="center"></a-text>
-                    <a-image src="#my-image" width="4" height="3" position="0 1.5 0"></a-image>
-                    <a-text position="-1.9 -1.5 0" width="3.8" height="4.5"
-                        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in posuere nulla. Pellentesque et nisl erat. Aenean pharetra sapien accumsan ipsum efficitur, sed viverra nibh bibendum. Praesent odio sapien, iaculis eu ligula in, aliquam egestas metus. Proin imperdiet, neque quis dictum elementum, libero mauris suscipit ex, sed rutrum tortor massa eu nunc. Nulla eget molestie risus, a blandit massa. Nam egestas risus sapien, eu tristique erat mollis at. Duis consectetur dolor eros, sit amet faucibus nunc vehicula ac. Etiam id sagittis ipsum. Donec ut dolor et metus ultrices vehicula."
-                        color="black"></a-text>
-                </a-plane>
-            </a-entity>
-        </a-marker>
-        
-        <a-marker type='barcode' value='2'>
-            <a-entity position='0 0 0' rotation="-90 0 0">
-                <a-plane width="4" height="8" position='-2 -4 -0.1' rotation="0 0 0" color="orange"
-                    material='opacity: 0.5;'>
-                    <a-text value="JUDUL DISINI" color="#111" position="0 3.5 0" align="center"></a-text>
-                    <a-image src="#my-image" width="4" height="3" position="0 1.5 0"></a-image>
-                    <a-text position="-1.9 -1.5 0" width="3.8" height="4.5"
-                        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in posuere nulla. Pellentesque et nisl erat. Aenean pharetra sapien accumsan ipsum efficitur, sed viverra nibh bibendum. Praesent odio sapien, iaculis eu ligula in, aliquam egestas metus. Proin imperdiet, neque quis dictum elementum, libero mauris suscipit ex, sed rutrum tortor massa eu nunc. Nulla eget molestie risus, a blandit massa. Nam egestas risus sapien, eu tristique erat mollis at. Duis consectetur dolor eros, sit amet faucibus nunc vehicula ac. Etiam id sagittis ipsum. Donec ut dolor et metus ultrices vehicula."
-                        color="black"></a-text>
-                </a-plane>
-            </a-entity>
-        </a-marker>
-        
-        <a-marker type='barcode' value='3'>
-            <a-entity position='0 0 0' rotation="-90 0 0">
-                <a-plane width="4" height="8" position='-2 -4 -0.1' rotation="0 0 0" color="orange"
-                    material='opacity: 0.5;'>
-                    <a-text value="JUDUL DISINI" color="#111" position="0 3.5 0" align="center"></a-text>
-                    <a-image src="#my-image" width="4" height="3" position="0 1.5 0"></a-image>
-                    <a-text position="-1.9 -1.5 0" width="3.8" height="4.5"
-                        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in posuere nulla. Pellentesque et nisl erat. Aenean pharetra sapien accumsan ipsum efficitur, sed viverra nibh bibendum. Praesent odio sapien, iaculis eu ligula in, aliquam egestas metus. Proin imperdiet, neque quis dictum elementum, libero mauris suscipit ex, sed rutrum tortor massa eu nunc. Nulla eget molestie risus, a blandit massa. Nam egestas risus sapien, eu tristique erat mollis at. Duis consectetur dolor eros, sit amet faucibus nunc vehicula ac. Etiam id sagittis ipsum. Donec ut dolor et metus ultrices vehicula."
-                        color="black"></a-text>
-                </a-plane>
-            </a-entity>
-        </a-marker>
-        
-        <a-marker type='barcode' value='4'>
-            <a-entity position='0 0 0' rotation="-90 0 0">
-                <a-plane width="4" height="8" position='-2 -4 -0.1' rotation="0 0 0" color="orange"
-                    material='opacity: 0.5;'>
-                    <a-text value="JUDUL DISINI" color="#111" position="0 3.5 0" align="center"></a-text>
-                    <a-image src="#my-image" width="4" height="3" position="0 1.5 0"></a-image>
-                    <a-text position="-1.9 -1.5 0" width="3.8" height="4.5"
-                        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in posuere nulla. Pellentesque et nisl erat. Aenean pharetra sapien accumsan ipsum efficitur, sed viverra nibh bibendum. Praesent odio sapien, iaculis eu ligula in, aliquam egestas metus. Proin imperdiet, neque quis dictum elementum, libero mauris suscipit ex, sed rutrum tortor massa eu nunc. Nulla eget molestie risus, a blandit massa. Nam egestas risus sapien, eu tristique erat mollis at. Duis consectetur dolor eros, sit amet faucibus nunc vehicula ac. Etiam id sagittis ipsum. Donec ut dolor et metus ultrices vehicula."
-                        color="black"></a-text>
-                </a-plane>
-            </a-entity>
-        </a-marker>
-        
-        <a-marker type='barcode' value='5'>
-            <a-entity position='0 0 0' rotation="-90 0 0">
-                <a-plane width="4" height="8" position='-2 -4 -0.1' rotation="0 0 0" color="orange"
-                    material='opacity: 0.5;'>
-                    <a-text value="JUDUL DISINI" color="#111" position="0 3.5 0" align="center"></a-text>
-                    <a-image src="#my-image" width="4" height="3" position="0 1.5 0"></a-image>
-                    <a-text position="-1.9 -1.5 0" width="3.8" height="4.5"
-                        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in posuere nulla. Pellentesque et nisl erat. Aenean pharetra sapien accumsan ipsum efficitur, sed viverra nibh bibendum. Praesent odio sapien, iaculis eu ligula in, aliquam egestas metus. Proin imperdiet, neque quis dictum elementum, libero mauris suscipit ex, sed rutrum tortor massa eu nunc. Nulla eget molestie risus, a blandit massa. Nam egestas risus sapien, eu tristique erat mollis at. Duis consectetur dolor eros, sit amet faucibus nunc vehicula ac. Etiam id sagittis ipsum. Donec ut dolor et metus ultrices vehicula."
-                        color="black"></a-text>
-                </a-plane>
-            </a-entity>
-        </a-marker>
-        
-        <a-marker type='barcode' value='6'>
-            <a-entity position='0 0 0' rotation="-90 0 0">
-                <a-plane width="4" height="8" position='-2 -4 -0.1' rotation="0 0 0" color="orange"
-                    material='opacity: 0.5;'>
-                    <a-text value="JUDUL DISINI" color="#111" position="0 3.5 0" align="center"></a-text>
-                    <a-image src="#my-image" width="4" height="3" position="0 1.5 0"></a-image>
-                    <a-text position="-1.9 -1.5 0" width="3.8" height="4.5"
-                        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in posuere nulla. Pellentesque et nisl erat. Aenean pharetra sapien accumsan ipsum efficitur, sed viverra nibh bibendum. Praesent odio sapien, iaculis eu ligula in, aliquam egestas metus. Proin imperdiet, neque quis dictum elementum, libero mauris suscipit ex, sed rutrum tortor massa eu nunc. Nulla eget molestie risus, a blandit massa. Nam egestas risus sapien, eu tristique erat mollis at. Duis consectetur dolor eros, sit amet faucibus nunc vehicula ac. Etiam id sagittis ipsum. Donec ut dolor et metus ultrices vehicula."
-                        color="black"></a-text>
-                </a-plane>
-            </a-entity>
-        </a-marker>
-        
-        <a-marker type='barcode' value='7'>
-            <a-entity position='0 0 0' rotation="-90 0 0">
-                <a-plane width="4" height="8" position='-2 -4 -0.1' rotation="0 0 0" color="orange"
-                    material='opacity: 0.5;'>
-                    <a-text value="JUDUL DISINI" color="#111" position="0 3.5 0" align="center"></a-text>
-                    <a-image src="#my-image" width="4" height="3" position="0 1.5 0"></a-image>
-                    <a-text position="-1.9 -1.5 0" width="3.8" height="4.5"
-                        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in posuere nulla. Pellentesque et nisl erat. Aenean pharetra sapien accumsan ipsum efficitur, sed viverra nibh bibendum. Praesent odio sapien, iaculis eu ligula in, aliquam egestas metus. Proin imperdiet, neque quis dictum elementum, libero mauris suscipit ex, sed rutrum tortor massa eu nunc. Nulla eget molestie risus, a blandit massa. Nam egestas risus sapien, eu tristique erat mollis at. Duis consectetur dolor eros, sit amet faucibus nunc vehicula ac. Etiam id sagittis ipsum. Donec ut dolor et metus ultrices vehicula."
-                        color="black"></a-text>
-                </a-plane>
-            </a-entity>
-        </a-marker>
-        
-        <a-marker type='barcode' value='8'>
-            <a-entity position='0 0 0' rotation="-90 0 0">
-                <a-plane width="4" height="8" position='-2 -4 -0.1' rotation="0 0 0" color="orange"
-                    material='opacity: 0.5;'>
-                    <a-text value="JUDUL DISINI" color="#111" position="0 3.5 0" align="center"></a-text>
-                    <a-image src="#my-image" width="4" height="3" position="0 1.5 0"></a-image>
-                    <a-text position="-1.9 -1.5 0" width="3.8" height="4.5"
-                        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in posuere nulla. Pellentesque et nisl erat. Aenean pharetra sapien accumsan ipsum efficitur, sed viverra nibh bibendum. Praesent odio sapien, iaculis eu ligula in, aliquam egestas metus. Proin imperdiet, neque quis dictum elementum, libero mauris suscipit ex, sed rutrum tortor massa eu nunc. Nulla eget molestie risus, a blandit massa. Nam egestas risus sapien, eu tristique erat mollis at. Duis consectetur dolor eros, sit amet faucibus nunc vehicula ac. Etiam id sagittis ipsum. Donec ut dolor et metus ultrices vehicula."
-                        color="black"></a-text>
-                </a-plane>
-            </a-entity>
-        </a-marker>
-        
-        <a-marker type='barcode' value='9'>
-            <a-entity position='0 0 0' rotation="-90 0 0">
-                <a-plane width="4" height="8" position='-2 -4 -0.1' rotation="0 0 0" color="orange"
-                    material='opacity: 0.5;'>
-                    <a-text value="JUDUL DISINI" color="#111" position="0 3.5 0" align="center"></a-text>
-                    <a-image src="#my-image" width="4" height="3" position="0 1.5 0"></a-image>
-                    <a-text position="-1.9 -1.5 0" width="3.8" height="4.5"
-                        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in posuere nulla. Pellentesque et nisl erat. Aenean pharetra sapien accumsan ipsum efficitur, sed viverra nibh bibendum. Praesent odio sapien, iaculis eu ligula in, aliquam egestas metus. Proin imperdiet, neque quis dictum elementum, libero mauris suscipit ex, sed rutrum tortor massa eu nunc. Nulla eget molestie risus, a blandit massa. Nam egestas risus sapien, eu tristique erat mollis at. Duis consectetur dolor eros, sit amet faucibus nunc vehicula ac. Etiam id sagittis ipsum. Donec ut dolor et metus ultrices vehicula."
-                        color="black"></a-text>
-                </a-plane>
-            </a-entity>
-        </a-marker>
-        
-        <a-marker type='barcode' value='10'>
-            <a-entity position='0 0 0' rotation="-90 0 0">
-                <a-plane width="4" height="8" position='-2 -4 -0.1' rotation="0 0 0" color="orange"
-                    material='opacity: 0.5;'>
-                    <a-text value="JUDUL DISINI" color="#111" position="0 3.5 0" align="center"></a-text>
-                    <a-image src="#my-image" width="4" height="3" position="0 1.5 0"></a-image>
-                    <a-text position="-1.9 -1.5 0" width="3.8" height="4.5"
-                        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in posuere nulla. Pellentesque et nisl erat. Aenean pharetra sapien accumsan ipsum efficitur, sed viverra nibh bibendum. Praesent odio sapien, iaculis eu ligula in, aliquam egestas metus. Proin imperdiet, neque quis dictum elementum, libero mauris suscipit ex, sed rutrum tortor massa eu nunc. Nulla eget molestie risus, a blandit massa. Nam egestas risus sapien, eu tristique erat mollis at. Duis consectetur dolor eros, sit amet faucibus nunc vehicula ac. Etiam id sagittis ipsum. Donec ut dolor et metus ultrices vehicula."
-                        color="black"></a-text>
-                </a-plane>
-            </a-entity>
-        </a-marker>
-        <a-camera-static />
+        <a-marker type="barcode" value="43">
+        <a-entity position='0 0 0' rotation="-90 0 0">
+            <a-plane width="4" height="8" position='0 0 -0.1' rotation="0 0 0" color="orange">
+                <a-text value="ORIENTASI PERPUSTAKAAN" color="green" position="0 3.5 0.2" align="center"></a-text>
+                <a-image src="#bvs" width="4" height="3" position="0 1.5 0.2"></a-image>
+                <a-text position="-1.9 -1.5 0.2" width="3.8" height="4.5"
+                value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in posuere nulla. Pellentesque et nisl erat. Aenean pharetra sapien accumsan ipsum efficitur, sed viverra nibh bibendum. Praesent odio sapien, iaculis eu ligula in, aliquam egestas metus. Proin imperdiet, neque quis dictum elementum, libero mauris suscipit ex, sed rutrum tortor massa eu nunc. Nulla eget molestie risus, a blandit massa. Nam egestas risus sapien, eu tristique erat mollis at. Duis consectetur dolor eros, sit amet faucibus nunc vehicula ac. Etiam id sagittis ipsum. Donec ut dolor et metus ultrices vehicula."
+                color="black"></a-text>
+            </a-plane>
+        </a-entity>
+    </a-marker>
+    <a-marker type="barcode" value="47">
+        <a-entity position='0 0 0' rotation="-90 0 0">
+            <a-plane width="4" height="8" position='0 0 -0.1' rotation="0 0 0" color="pink">
+                <a-text value="PERPUSTAKAAN RAMAI" color="green" position="0 3.5 0.2" align="center"></a-text>
+                <a-image src="#bvs" width="4" height="3" position="0 1.5 0.2"></a-image>
+                <a-text position="-1.9 -1.5 0.2" width="3.8" height="4.5"
+                value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in posuere nulla. Pellentesque et nisl erat. Aenean pharetra sapien accumsan ipsum efficitur, sed viverra nibh bibendum. Praesent odio sapien, iaculis eu ligula in, aliquam egestas metus. Proin imperdiet, neque quis dictum elementum, libero mauris suscipit ex, sed rutrum tortor massa eu nunc. Nulla eget molestie risus, a blandit massa. Nam egestas risus sapien, eu tristique erat mollis at. Duis consectetur dolor eros, sit amet faucibus nunc vehicula ac. Etiam id sagittis ipsum. Donec ut dolor et metus ultrices vehicula."
+                color="black"></a-text>
+            </a-plane>
+        </a-entity>
+    </a-marker> 
+    <!-- github.com/meizano/poster-ar-perpustakaan -->
     </a-scene>
 </body>
-
 </html>

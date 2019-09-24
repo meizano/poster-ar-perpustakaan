@@ -14,9 +14,9 @@
         <a-assets>
             <img id="my-image" src="./assets/orientasi-perpustakaan.jpg">
         </a-assets>
-        <a-camera static />
-        <a-marker type='barcode' value='1'>
-            <a-entity position='0 0 0' rotation="-90 0 0">
+        <a-camera static rotation="-90 0 0"/>
+        <a-marker type="barcode" value="1">
+            <a-entity position='0 0 0'>
                 <a-plane width="4" height="8" position='0 0 -0.1' rotation="0 0 0" color="orange" material='opacity: 0.5;'>
                     <a-text value="JUDUL DISINI" color="#111" position="0 3.5 0.2" align="center"></a-text>
                     <a-image src="#my-image" width="4" height="3" position="0 1.5 0.2"></a-image>

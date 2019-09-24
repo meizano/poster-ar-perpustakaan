@@ -10,19 +10,17 @@
 </head>
 
 <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded vr-mode-ui="enabled: false"
-        arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3;debugUIEnabled: false">
+    <a-scene embedded vr-mode-ui="enabled: false" arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3;debugUIEnabled: false">
         <a-assets>
             <img id="bvs" src="http://q-ec.bstatic.com/images/hotel/max1024x768/831/83174127.jpg">
         </a-assets>
+        <a-camera static />
         <a-marker type="barcode" value="1">
             <a-entity position='0 0 0' rotation="-90 0 0">
                 <a-plane width="4" height="8" position='0 0 -0.1' rotation="0 0 0" color="orange">
                     <a-text value="ORIENTASI PERPUSTAKAAN" color="green" position="0 3.5 0.2" align="center"></a-text>
                     <a-image src="#bvs" width="4" height="3" position="0 1.5 0.2"></a-image>
-                    <a-text position="-1.9 -1.5 0.2" width="3.8" height="4.5"
-                        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in posuere nulla. Pellentesque et nisl erat. Aenean pharetra sapien accumsan ipsum efficitur, sed viverra nibh bibendum. Praesent odio sapien, iaculis eu ligula in, aliquam egestas metus. Proin imperdiet, neque quis dictum elementum, libero mauris suscipit ex, sed rutrum tortor massa eu nunc. Nulla eget molestie risus, a blandit massa. Nam egestas risus sapien, eu tristique erat mollis at. Duis consectetur dolor eros, sit amet faucibus nunc vehicula ac. Etiam id sagittis ipsum. Donec ut dolor et metus ultrices vehicula."
-                        color="black"></a-text>
+                    <a-text position="-1.9 -1.5 0.2" width="3.8" height="4.5" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in posuere nulla. Pellentesque et nisl erat. Aenean pharetra sapien accumsan ipsum efficitur, sed viverra nibh bibendum. Praesent odio sapien, iaculis eu ligula in, aliquam egestas metus. Proin imperdiet, neque quis dictum elementum, libero mauris suscipit ex, sed rutrum tortor massa eu nunc. Nulla eget molestie risus, a blandit massa. Nam egestas risus sapien, eu tristique erat mollis at. Duis consectetur dolor eros, sit amet faucibus nunc vehicula ac. Etiam id sagittis ipsum. Donec ut dolor et metus ultrices vehicula." color="black"></a-text>
                 </a-plane>
             </a-entity>
         </a-marker>
@@ -31,13 +29,10 @@
                 <a-plane width="4" height="8" position='0 0 -0.1' rotation="0 0 0" color="pink">
                     <a-text value="PERPUSTAKAAN RAMAI" color="green" position="0 3.5 0.2" align="center"></a-text>
                     <a-image src="#bvs" width="4" height="3" position="0 1.5 0.2"></a-image>
-                    <a-text position="-1.9 -1.5 0.2" width="3.8" height="4.5"
-                        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in posuere nulla. Pellentesque et nisl erat. Aenean pharetra sapien accumsan ipsum efficitur, sed viverra nibh bibendum. Praesent odio sapien, iaculis eu ligula in, aliquam egestas metus. Proin imperdiet, neque quis dictum elementum, libero mauris suscipit ex, sed rutrum tortor massa eu nunc. Nulla eget molestie risus, a blandit massa. Nam egestas risus sapien, eu tristique erat mollis at. Duis consectetur dolor eros, sit amet faucibus nunc vehicula ac. Etiam id sagittis ipsum. Donec ut dolor et metus ultrices vehicula."
-                        color="black"></a-text>
+                    <a-text position="-1.9 -1.5 0.2" width="3.8" height="4.5" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in posuere nulla. Pellentesque et nisl erat. Aenean pharetra sapien accumsan ipsum efficitur, sed viverra nibh bibendum. Praesent odio sapien, iaculis eu ligula in, aliquam egestas metus. Proin imperdiet, neque quis dictum elementum, libero mauris suscipit ex, sed rutrum tortor massa eu nunc. Nulla eget molestie risus, a blandit massa. Nam egestas risus sapien, eu tristique erat mollis at. Duis consectetur dolor eros, sit amet faucibus nunc vehicula ac. Etiam id sagittis ipsum. Donec ut dolor et metus ultrices vehicula." color="black"></a-text>
                 </a-plane>
             </a-entity>
         </a-marker>
-        <a-camera-static />
     </a-scene>
 </body>
 

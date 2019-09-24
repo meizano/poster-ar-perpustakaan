@@ -16,4 +16,8 @@ Kode pembuatan poster Augmented Reality berbasis teknologi web (A-Frame dan AR.j
 ## Marker Barcode 3x3
 Marker untuk AR dapat diambil di dalam direktori pattern/Matrix code 3x3 (72dpi)/
 
-![Marker Barcode 1]("./pattern/Matrix code 3x3/1.png" "Marker Barcode 1")
+![Marker Barcode 1](./pattern/Matrix%20code%203x3%20(72dpi)/1.png "Marker Barcode 1")
+
+## Materi pembuatan poster
+* [Membuat Poster Augmented Reality dengan Teknologi Web](./materi/Membuat_Poster_Augmented_Reality_dengan_Teknologi_Web.pdf "Membuat Poster Augmented Reality dengan Teknologi Web")
+* [Pengabdian ARLib - Promosi Perpustakaan](./materi/Pengabdian_ARLib-Promosi_Perpustakaan.pdf "Pengabdian ARLib - Promosi Perpustakaan")

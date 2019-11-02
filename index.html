@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <title>Unila Library AR Poster</title>
+    <script src="./library/aframe.min.js"></script>
+    <script src="./library/aframe-ar.js"></script>
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     <script src="https://raw.githack.com/jeromeetienne/AR.js/1.7.7/aframe/build/aframe-ar.js"></script>
 </head>
@@ -14,100 +16,61 @@
         <a-assets>
             <img id="uniLibLogo" src="./assets/unila-library-logo.png">
             <img id="orientasiPerpustakaan" src="./assets/orientasi-perpustakaan.jpg">
-            <video id="videoBookDrop" autoplay loop="true" src="./assets/video/UnilaLibInnovation-BookDrop.mp4" webkit-playsinline/>
-            <!-- <video id="videoCCTV" autoplay loop="true" src="./assets/video/UnilaLibInnovation-CCTV.mp4" webkit-playsinline/> -->
-            <video id="videoGame" autoplay loop="true" src="./assets/video/UnilaLibInnovation-Game.mp4" webkit-playsinline/>
-            <video id="videoKegiatanLiterasi" autoplay loop="true" src="./assets/video/UnilaLibInnovation-KegiatanLiterasi.mp4" webkit-playsinline/>
-            <video id="videoKioskaSurvey" autoplay loop="true" src="./assets/video/UnilaLibInnovation-Kioska-Survey.mp4" webkit-playsinline/>
-            <!-- <video id="videoKioskaNavigasi" autoplay loop="true" src="./assets/video/UnilaLibInnovation-KioskaNavigasi.mp4" webkit-playsinline/> -->
             <video id="videoKioskaPinjam" autoplay loop="true" src="./assets/video/UnilaLibInnovation-KioskaPinjam.mp4" webkit-playsinline/>
-            <!-- <video id="videoKioskaPrinting" autoplay loop="true" src="./assets/video/UnilaLibInnovation-KioskaPrinting.mp4" webkit-playsinline/> -->
-            <!-- <video id="videoMonev" autoplay loop="true" src="./assets/video/UnilaLibInnovation-Monev.mp4" webkit-playsinline/> -->
+            <video id="videoBookDrop" autoplay loop="true" src="./assets/video/UnilaLibInnovation-BookDrop.mp4" webkit-playsinline/>
+            <video id="videoKioskaPrinting" autoplay loop="true" src="./assets/video/UnilaLibInnovation-KioskaPrinting.mp4" webkit-playsinline/>
+            <video id="videoKioskaNavigasi" autoplay loop="true" src="./assets/video/UnilaLibInnovation-KioskaNavigasi.mp4" webkit-playsinline/>
+            <video id="videoKioskaSurvey" autoplay loop="true" src="./assets/video/UnilaLibInnovation-Kioska-Survey.mp4" webkit-playsinline/>
+            <video id="videoCCTV" autoplay loop="true" src="./assets/video/UnilaLibInnovation-CCTV.mp4" webkit-playsinline/>
+            <!-- <video id="videoGame" autoplay loop="true" src="./assets/video/UnilaLibInnovation-Game.mp4" webkit-playsinline/> -->
+            <!-- <video id="videoKegiatanLiterasi" autoplay loop="true" src="./assets/video/UnilaLibInnovation-KegiatanLiterasi.mp4" webkit-playsinline/> -->
             <!-- <video id="videoNavigasiMarker" autoplay loop="true" src="./assets/video/UnilaLibInnovation-NavigasiMarker.mp4" webkit-playsinline/> -->
+            <!-- <video id="videoMonev" autoplay loop="true" src="./assets/video/UnilaLibInnovation-Monev.mp4" webkit-playsinline/> -->
             <!-- <video id="videoPosterAR" autoplay loop="true" src="./assets/video/UnilaLibInnovation-PosterAR.mp4" webkit-playsinline/> -->
-            <video id="videoVRTour" autoplay loop="true" src="./assets/video/UnilaLibInnovation-VRTour.mp4" webkit-playsinline/>
-            <video id="videomLibrary" autoplay loop="true" src="./assets/video/UnilaLibInnovation-mLibrary.mp4" webkit-playsinline/>
+            <!-- <video id="videoVRTour" autoplay loop="true" src="./assets/video/UnilaLibInnovation-VRTour.mp4" webkit-playsinline/> -->
+            <!-- <video id="videomLibrary" autoplay loop="true" src="./assets/video/UnilaLibInnovation-mLibrary.mp4" webkit-playsinline/> -->
         </a-assets>
         <a-camera static/>
         <a-marker type="barcode" value="0">
-            <a-entity position="0 0 -2.65" rotation="-90 0 0">
-                <a-plane width="8" height="1" position='0 -2.75 -0' rotation="0 0 0" color="purple"></a-plane>
-                <a-text value="KIOSKA PEMINJAMAN MANDIRI" color="black" position="0 -2.5 0.4" align="center" width="8"></a-text>
+            <a-entity position="-3.4 0 -2.65" rotation="-90 0 0">
+                <a-plane width="8" height="1" position='0 -2.75 -0' rotation="0 0 0" color="blue"></a-plane>
+                <a-text value="Kioska Peminjaman" color="black" position="0 -2.5 0.4" align="center" width="8"></a-text>
                 <a-video src="#videoKioskaPinjam" width="8" height="4.5" position="0 0 0"></a-video>
             </a-entity>
         </a-marker>
-
-        <a-marker type="barcode" value="2">
+        <a-marker type="barcode" value="1">
             <a-entity position="-3.4 0 -2.65" rotation="-90 0 0">
-                <a-plane width="8" height="1" position='0 -2.75 -0' rotation="0 0 0" color="purple"></a-plane>
-                <a-text value="KIOSKA PENGEMBALIAN MANDIRI" color="black" position="0 -2.5 0.4" align="center" width="8"></a-text>
+                <a-plane width="8" height="1" position='0 -2.75 -0' rotation="0 0 0" color="blue"></a-plane>
+                <a-text value="Book Drop" color="black" position="0 -2.5 0.4" align="center" width="8"></a-text>
                 <a-video src="#videoBookDrop" width="8" height="4.5" position="0 0 0"></a-video>
             </a-entity>
         </a-marker>
-
+        <a-marker type="barcode" value="2">
+            <a-entity position="-3.4 0 -2.65" rotation="-90 0 0">
+                <a-plane width="8" height="1" position='0 -2.75 -0' rotation="0 0 0" color="blue"></a-plane>
+                <a-text value="Kioska Printing KKI" color="black" position="0 -2.5 0.4" align="center" width="8"></a-text>
+                <a-video src="#videoKioskaPrinting" width="8" height="4.5" position="0 0 0"></a-video>
+            </a-entity>
+        </a-marker>
         <a-marker type="barcode" value="3">
             <a-entity position="-3.4 0 -2.65" rotation="-90 0 0">
-                <a-entity width="20" height="30" geo>
-                    <a-plane width="8" height="1" position='0 -2.75 -0' rotation="0 0 0" color="green"></a-plane>
-                    <a-text value="LOBI & RUANG REKREASI" color="black" position="0 -2.5 0.4" align="center" width="8"></a-text>
-                    <a-video src="#videoGame" width="8" height="4.5" position="0 0 0"></a-video>
-                </a-entity>
+                <a-plane width="8" height="1" position='0 -2.75 -0' rotation="0 0 0" color="blue"></a-plane>
+                <a-text value="Kioska Navigasi" color="black" position="0 -2.5 0.4" align="center" width="8"></a-text>
+                <a-video src="#videoKioskaNavigasi" width="8" height="4.5" position="0 0 0"></a-video>
             </a-entity>
         </a-marker>
-
         <a-marker type="barcode" value="4">
             <a-entity position="-3.4 0 -2.65" rotation="-90 0 0">
-                <a-plane width="8" height="1" position='0 -2.75 -0' rotation="0 0 0" color="green"></a-plane>
-                <a-text value="KOLEKSI LENGKAP" color="black" position="0 -2.5 0.4" align="center" width="8"></a-text>
-                <a-video src="#videoKegiatanLiterasi" width="8" height="4.5" position="0 0 0"></a-video>
-            </a-entity>
-        </a-marker>
-
-        <a-marker type="barcode" value="5">
-            <a-entity position="-3.4 0 -2.65" rotation="-90 0 0">
-                <a-plane width="8" height="1" position='0 -2.75 -0' rotation="0 0 0" color="green"></a-plane>
-                <a-text value="PENDIDIKAN PENGGUNA" color="black" position="0 -2.5 0.4" align="center" width="8"></a-text>
+                <a-plane width="8" height="1" position='0 -2.75 -0' rotation="0 0 0" color="blue"></a-plane>
+                <a-text value="Kioska Survey" color="black" position="0 -2.5 0.4" align="center" width="8"></a-text>
                 <a-video src="#videoKioskaSurvey" width="8" height="4.5" position="0 0 0"></a-video>
             </a-entity>
         </a-marker>
-
-        <a-marker type="barcode" value="6">
+        <a-marker type="barcode" value="5">
             <a-entity position="-3.4 0 -2.65" rotation="-90 0 0">
-                <a-plane width="8" height="1" position='0 -2.75 -0' rotation="0 0 0" color="green"></a-plane>
-                <a-text value="KOLEKSI BI CORNER" color="black" position="0 -2.5 0.4" align="center" width="8"></a-text>
-                <a-video src="#videoKegiatanLiterasi" width="8" height="4.5" position="0 0 0"></a-video>
-            </a-entity>
-        </a-marker>
-
-        <a-marker type="barcode" value="7">
-            <a-entity position="-3.4 0 -2.65" rotation="-90 0 0">
-                <a-plane width="8" height="1" position='0 -2.75 -0' rotation="0 0 0" color="green"></a-plane>
-                <a-text value="ONLINE ACCESS" color="black" position="0 -2.5 0.4" align="center" width="8"></a-text>
-                <a-video src="#videomLibrary" width="8" height="4.5" position="0 0 0"></a-video>
-            </a-entity>
-        </a-marker>
-
-        <a-marker type="barcode" value="8">
-            <a-entity position="-3.4 0 -2.65" rotation="-90 0 0">
-                <a-plane width="8" height="1" position='0 -2.75 -0' rotation="0 0 0" color="yellow"></a-plane>
-                <a-text value="OPAC" color="black" position="0 -2.5 0.4" align="center" width="8"></a-text>
-                <a-video src="#videomLibrary" width="8" height="4.5" position="0 0 0"></a-video>
-            </a-entity>
-        </a-marker>
-
-        <a-marker type="barcode" value="9">
-            <a-entity position="-3.4 0 -2.65" rotation="-90 0 0">
-                <a-plane width="8" height="1" position='0 -2.75 -0' rotation="0 0 0" color="yellow"></a-plane>
-                <a-text value="EBOOK & EJOURNAL" color="black" position="0 -2.5 0.4" align="center" width="8"></a-text>
-                <a-video src="#videomLibrary" width="8" height="4.5" position="0 0 0"></a-video>
-            </a-entity>
-        </a-marker>
-
-        <a-marker type="barcode" value="10">
-            <a-entity position="-3.4 0 -2.65" rotation="-90 0 0">
-                <a-plane width="8" height="1" position='0 -2.75 -0' rotation="0 0 0" color="yellow"></a-plane>
-                <a-text value="KEGIATAN LITERASI" color="black" position="0 -2.5 0.4" align="center" width="8"></a-text>
-                <a-video src="#videoKegiatanLiterasi" width="8" height="4.5" position="0 0 0"></a-video>
+                <a-plane width="8" height="1" position='0 -2.75 -0' rotation="0 0 0" color="blue"></a-plane>
+                <a-text value="CCTV Keamanan" color="black" position="0 -2.5 0.4" align="center" width="8"></a-text>
+                <a-video src="#videoCCTV" width="8" height="4.5" position="0 0 0"></a-video>
             </a-entity>
         </a-marker>
     </a-scene>

@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/libraryunilaac/public_html/posterar
+    - /bin/cp -R . $DEPLOYPATH
